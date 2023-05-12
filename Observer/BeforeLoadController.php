@@ -30,7 +30,7 @@ class BeforeLoadController implements ObserverInterface
             $this->actionFlag->set(
                 '',
                 ActionInterface::FLAG_NO_DISPATCH,
-                true
+                true  // @phpstan-ignore-line
             );
 
             $this->httpResponse->setRedirect(

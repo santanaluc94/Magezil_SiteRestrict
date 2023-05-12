@@ -3,7 +3,6 @@
 namespace Magezil\SiteRestrict\Model\Config\Source;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
-use Magento\Framework\App\RequestInterface;
 use Magento\Framework\Module\Manager as ModuleManager;
 use Magento\Store\Model\ScopeInterface;
 
@@ -29,8 +28,7 @@ class SystemConfig
 
     public function __construct(
         private ScopeConfigInterface $scopeConfig,
-        private ModuleManager $moduleManager,
-        private RequestInterface $request
+        private ModuleManager $moduleManager
     ) {
     }
 
@@ -55,6 +53,7 @@ class SystemConfig
             $storeId
         ));
 
+        /** @phpstan-ignore-next-line */
         if (!empty($availablePaths)) {
             foreach ($availablePaths as $path) {
                 $this->fixedAllowedPaths[] = self::CUSTOMER_ACCOUNT_BASE . $path;
