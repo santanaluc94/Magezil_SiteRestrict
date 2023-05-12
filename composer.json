@@ -1,5 +1,5 @@
 {
-    "name": "magezil/site-restrict",
+    "name": "magezil/module-site-restrict",
     "description": "Custom Module to redirect to login or forgot password if customer is not logged in.",
     "require": {
         "php": "~8.1.0||~8.2.0",
