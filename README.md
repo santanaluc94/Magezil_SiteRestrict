@@ -38,4 +38,4 @@ bin/magento cache:flush
 **Enabled Module:** Enable/Disable module site restriction functionality.
 **Available Paths:** Select the paths that are available to non-logged-in customers.
 
-![ScreenShot](https://github.com/santanaluc94/Magezil_SiteRestrict/blob/doc/config.png)
+![ScreenShot](https://github.com/santanaluc94/Magezil_SiteRestrict/raw/master/doc/config.png)
