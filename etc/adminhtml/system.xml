@@ -17,14 +17,14 @@
                     <label>Enabled Module</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <validate>required-entry</validate>
-                    <comment>Enable site restriction module.</comment>
+                    <comment>Enable/Disable module site restriction functionality.</comment>
                 </field>
 
                 <field id="available_paths" translate="label" type="multiselect" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
                     <label>Available Paths</label>
                     <source_model>Magezil\SiteRestrict\Model\Config\Source\AvailablesPath</source_model>
                     <can_be_empty>1</can_be_empty>
-                    <comment>Enable site restriction module.</comment>
+                    <comment>Select the paths that are available to non-logged-in customers.</comment>
                     <depends>
                         <field id="magezil_site_restrict/general/is_enabled">1</field>
                     </depends>
