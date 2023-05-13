@@ -6,8 +6,8 @@ use Magento\Framework\Event\ObserverInterface;
 use Magezil\SiteRestrict\Model\RestrictedPathManager;
 use Magento\Framework\App\ActionFlag;
 use Magento\Framework\UrlInterface;
-use Magento\Framework\App\Response\Http as HttpResponse;
 use Magento\Framework\App\Request\Http as HttpRequest;
+use Magento\Framework\App\Response\Http as HttpResponse;
 use Magento\Framework\Event\Observer;
 use Magento\Framework\App\ActionInterface;
 
@@ -22,6 +22,11 @@ class BeforeLoadController implements ObserverInterface
     ) {
     }
 
+    /**
+     * @param Observer $observer
+     * @return void
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     */
     public function execute(Observer $observer): void
     {
         $controllerActionPath = $this->httpRequest->getFullActionName();
