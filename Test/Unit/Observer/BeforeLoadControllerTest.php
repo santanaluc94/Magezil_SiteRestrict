@@ -56,7 +56,6 @@ class BeforeLoadControllerTest extends TestCase
         $this->httpResponseMock->method('setRedirect')->willReturnSelf();
         $this->httpResponseMock->method('sendResponse');
 
-        $result = $this->beforeLoadControllerMock->execute($this->observerMock);
-        $this->assertEmpty($result);
+        $this->assertEmpty($this->beforeLoadControllerMock->execute($this->observerMock));
     }
 }
