@@ -2,7 +2,7 @@
 
 ## Description
 
-Custom module to redirect non-logged-in customers to the login page. With access to the forgot password and customer registration pages (whether these paths are selected in the admin settings).
+Adobe Commerce custom module to redirect non-logged-in customers to the login page. With access to the forgot password and customer registration pages (whether these paths are selected in the admin settings).
 
 ---
 
@@ -26,7 +26,9 @@ bin/magento cache:flush
 ### System Requirements
 
 > **Magento 2 requires at least:** 2.4.X
+> 
 > **Magento 2 Tested up to:** 2.4.6
+> 
 > **Requires PHP:** 8.1
 
 ---
