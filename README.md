@@ -35,7 +35,19 @@ bin/magento cache:flush
 
 ### Settings
 
+To configure the module, go to the Magento admin area and follow the steps below:
+
+> **Stores** > **Configuration** > **Magezil** > **Site Restrict** > **General**
+
 **Enabled Module:** Enable/Disable module site restriction functionality.
 **Available Paths:** Select the paths that are available to non-logged-in customers.
 
-![ScreenShot](https://github.com/santanaluc94/Magezil_SiteRestrict/raw/master/doc/config.png)
+> Note: The list of controllers should be specified as a comma-separated string, without leading or trailing spaces.
+
+![ScreenShot](https://github.com/santanaluc94/Magezil_SiteRestrict/raw/master/docs/config.png)
+
+## Site
+
+### Feature
+
+The module includes a controller validation observer that runs whenever a controller is loaded. This observer checks if the current controller is in the list of valid controllers defined in the module's configuration. If the controller is not in the list, the observer redirects the user to login page.
